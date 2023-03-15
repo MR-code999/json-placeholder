@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show your all photos</title>
+    <style>
+        #All-photos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+
+        .photo {
+            border: 2px solid orange;
+            padding: 0 11px;
+            border-radius: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Show your all photos</h1>
+        <div id="All-photos">
+
+        </div>
+        <button onclick="userPhotos()">Show photos</button>
+    </section>
+
+
+
+
+
+
+    <script src="js/photo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show your post</title>
+    <style>
+        #posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+
+        .post {
+            border: 2px solid orange;
+            padding: 0 11px;
+            border-radius: 24px;
+        }
+
+        @media screen and (max-width:667px) {
+            #posts {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button id="third-page">third page</button>
+    <section>
+        <h4>second page</h4>
+        <h1>show your all post</h1>
+        <div id="posts">
+
+        </div>
+
+        <button onclick="loadPost()">Show Post</button>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="js/post.js"></script>
+</body>
+
+</html>

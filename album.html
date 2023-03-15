@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Your Album</title>
+    <style>
+        #album-show {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+
+        .album {
+            border: 2px solid chocolate;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        @media screen and (max-width:667px) {
+            #album-show {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <button id="four-page">Fourth page</button>
+    <h4>third page</h4>
+    <h1>show your all album</h1>
+
+    <div id="album-show">
+
+    </div>
+    <button onclick="userAlbum()">Show Album</button>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/album.js"></script>
+</body>
+
+</html>
